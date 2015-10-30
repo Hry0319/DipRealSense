@@ -47,7 +47,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <LibraryPath>./lib;$(LibraryPath)</LibraryPath>
-    <ExecutablePath>./include/OpenCV;./include/OpenCV/opencv;./include/OpenCV/opencv2;./include/RealSense;$(ExecutablePath)</ExecutablePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <IncludePath>./include/OpenCV;./include/RealSense;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
