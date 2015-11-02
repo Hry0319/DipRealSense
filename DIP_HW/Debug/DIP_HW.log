@@ -1,17 +1,22 @@
-﻿Build started 2015/10/30 下午 05:28:25.
-     1>Project "C:\Users\Patrick\documents\visual studio 2012\Projects\DIP_HW\DIP_HW\DIP_HW.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2015/10/30 下午 05:50:40.
+     1>Project "C:\Users\Patrick\documents\visual studio 2012\Projects\DIP_HW\DIP_HW\DIP_HW.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppClean.targets(75,5): warning : The process cannot access the file 'C:\USERS\PATRICK\DOCUMENTS\VISUAL STUDIO 2012\PROJECTS\DIP_HW\DIP_HW\DEBUG\VC110.PDB' because it is being used by another process.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppClean.targets(75,5): warning : The process cannot access the file 'C:\Users\Patrick\documents\visual studio 2012\Projects\DIP_HW\DIP_HW\Debug\vc110.pdb' because it is being used by another process.
      1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\DIP_HW.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\DIP_HW.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt DIP_HW.cpp
          DIP_HW.cpp
      1>c:\users\patrick\documents\visual studio 2012\projects\dip_hw\dip_hw\include\opencv\opencv2\core\mat.hpp(1965): warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
      1>c:\users\patrick\documents\visual studio 2012\projects\dip_hw\dip_hw\include\opencv\opencv2\core\persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
      1>c:\users\patrick\documents\visual studio 2012\projects\dip_hw\dip_hw\include\opencv\opencv2\core\utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Patrick\documents\visual studio 2012\Projects\DIP_HW\Debug\DIP_HW.exe" /INCREMENTAL /NOLOGO libpxc_d.lib libpxcmd_d.lib opencv_ts300d.lib opencv_world300d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Patrick\documents\visual studio 2012\Projects\DIP_HW\Debug\DIP_HW.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Patrick\documents\visual studio 2012\Projects\DIP_HW\Debug\DIP_HW.lib" /MACHINE:X86 Debug\DIP_HW.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Patrick\documents\visual studio 2012\Projects\DIP_HW\Debug\DIP_HW.exe" /INCREMENTAL /NOLOGO /LIBPATH:./lib libpxc_d.lib libpxcmd_d.lib opencv_ts300d.lib opencv_world300d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Patrick\documents\visual studio 2012\Projects\DIP_HW\Debug\DIP_HW.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Patrick\documents\visual studio 2012\Projects\DIP_HW\Debug\DIP_HW.lib" /MACHINE:X86 Debug\DIP_HW.obj
          Debug\stdafx.obj
-         DIP_HW.vcxproj -> C:\Users\Patrick\documents\visual studio 2012\Projects\DIP_HW\Debug\DIP_HW.exe
-     1>Done Building Project "C:\Users\Patrick\documents\visual studio 2012\Projects\DIP_HW\DIP_HW\DIP_HW.vcxproj" (Build target(s)).
+     1>DIP_HW.obj : error LNK2019: unresolved external symbol _PXCSession_Create@0 referenced in function "public: static class PXCSenseManager * __cdecl PXCSenseManager::CreateInstance(void)" (?CreateInstance@PXCSenseManager@@SAPAV1@XZ)
+     1>C:\Users\Patrick\documents\visual studio 2012\Projects\DIP_HW\Debug\DIP_HW.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "C:\Users\Patrick\documents\visual studio 2012\Projects\DIP_HW\DIP_HW\DIP_HW.vcxproj" (Rebuild target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.48
+Time Elapsed 00:00:01.47
